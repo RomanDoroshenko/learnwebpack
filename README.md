@@ -1,1 +1,3 @@
 # learnwebpack
+
+Webpack training repo
