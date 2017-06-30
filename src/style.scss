@@ -1,0 +1,12 @@
+$font: 20px Roboto, sans-serif;
+
+#react-container {
+  background: url('backpattern.jpg');
+}
+h1 {
+  font-family: ubuntu;
+  border-bottom: 1px solid #333;
+}
+p {
+  font: $font;
+}
