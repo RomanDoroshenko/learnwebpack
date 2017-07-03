@@ -5,7 +5,8 @@ var CommonsChunkPlugin = require('./node_modules/webpack/lib/optimize/CommonsChu
 module.exports = {
   entry: {
     contact: './dist/contact',
-    about: './dist/about'
+    about: './dist/about',
+    verdor: ['react','react-dom']
   },
   output: {
     path: path.join(__dirname,'build'),
@@ -32,6 +33,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new CommonsChunkPlugin('commons.bundle.js')
+    new CommonsChunkPlugin('vendor.bundle.js')
   ]
 };
