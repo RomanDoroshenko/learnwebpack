@@ -1,5 +1,6 @@
-// var webpack  = require('webpack');
+var webpack  = require('webpack');
 var path = require('path');
+var CommonsChunkPlugin = require('./node_modules/webpack/lib/optimize/CommonsChunkPlugin');
 
 module.exports = {
   entry: {
@@ -29,5 +30,8 @@ module.exports = {
           loader: 'url-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new CommonsChunkPlugin('commons.bundle.js')
+  ]
 };
